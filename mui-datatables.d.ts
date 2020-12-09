@@ -930,6 +930,7 @@ declare module 'mui-datatables' {
         | RenderCustomComponent<MUIDataTableFilterList>
         | React.ReactNode;
       Tooltip: React.ReactNode;
+      TableWrapper: React.ReactNode;
     }>;
     data: Array<object | number[] | string[]>;
     options?: MUIDataTableOptions;
