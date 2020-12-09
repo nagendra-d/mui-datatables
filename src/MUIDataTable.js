@@ -2053,7 +2053,7 @@ class MUIDataTable extends React.Component {
                       })
                     : null}
                 </MuiTable>
-              <TableWrapperComponent>
+              </TableWrapperComponent>
             );
             if (DragDropBackend) {
               return (
