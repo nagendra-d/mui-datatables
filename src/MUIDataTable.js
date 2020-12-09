@@ -251,7 +251,7 @@ class MUIDataTable extends React.Component {
     components: PropTypes.objectOf(PropTypes.any),
   };
 
-  private DefaultTableWrapper = ({ children }) => children;
+  DefaultTableWrapper = ({ children }) => children;
 
   static defaultProps = {
     title: '',
