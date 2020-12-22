@@ -1442,6 +1442,7 @@ class MUIDataTable extends React.Component {
       },
       () => {
         this.setTableAction('filterChange');
+        this.setState({ page: 0 });
         if (this.options.onFilterChange) {
           this.options.onFilterChange(column, this.state.filterList, type, index, this.state.displayData);
         }
