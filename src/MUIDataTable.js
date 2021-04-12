@@ -2000,9 +2000,9 @@ class MUIDataTable extends React.Component {
                   ref={el => (this.tableRef = el)}
                   tabIndex={'0'}
                   role={'grid'}
-                  className={clsx(tableClassNames, 'test-table', { 'empty-table': !displayData })}
+                  className={clsx(tableClassNames, 'test-table', { 'empty-table': !rowCount })}
                   {...tableProps}>
-                  <caption className={classes.caption}>{title}</caption>
+                  <caption className={classes.caption}>{title}-{rowCount}</caption>
                   <TableHeadComponent
                     columns={columns}
                     activeColumn={activeColumn}
