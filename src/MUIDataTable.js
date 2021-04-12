@@ -577,7 +577,7 @@ class MUIDataTable extends React.Component {
   getTableContentRef = () => this.tableContent.current;
 
   /*
-   *  Build the source table data
+   *  Build the source table data
    *
    *  newColumns - columns from the options object.
    *  prevColumns - columns object saved onto ths state.
@@ -2000,7 +2000,7 @@ class MUIDataTable extends React.Component {
                   ref={el => (this.tableRef = el)}
                   tabIndex={'0'}
                   role={'grid'}
-                  className={tableClassNames}
+                  className={clsx(tableClassNames, 'empty-table': !displayData)}
                   {...tableProps}>
                   <caption className={classes.caption}>{title}</caption>
                   <TableHeadComponent
